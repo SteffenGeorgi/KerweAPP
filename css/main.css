@@ -1,0 +1,43 @@
+.ui-overlay-c { 
+	background: #1e1e1e;
+}
+
+.ui-page {
+	background: transparent !important;
+}
+
+
+#header {
+border-top:2px solid #F80749;
+height:60px;
+}
+
+/* -------------------------
+	::	PANEL 
+----------------------------*/
+
+/* Swipe works with mouse as well but often causes text selection. */
+#page * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+/* Arrow only buttons in the header. */
+#page .ui-header .ui-btn {
+    background: none;
+    border: none;
+    top: 9px;
+}
+#page .ui-header .ui-btn-inner {
+    border: none;
+}
+
+#left-panel {
+z-index:1000;
+height:100%;
+}
+#page {
+z-index:10;
+}
