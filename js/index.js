@@ -56,3 +56,24 @@ $( document ).on( "pageinit", "#page", function() {
         }
     });
 });
+ 
+
+//
+//	COUNTDOWN
+//
+
+// Initiate Countdown
+jQuery(document).ready(function() {
+	$('#countdown_dashboard').countDown({
+		targetDate: {
+			'day': 		02,
+			'month': 	08,
+			'year': 	2013,
+			'hour': 	18,
+			'min': 		0,
+			'sec': 		0
+		},
+		omitWeeks: true
+	});
+});
+

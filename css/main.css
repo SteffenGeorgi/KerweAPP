@@ -1,4 +1,20 @@
-.ui-overlay-c { 
+/* Swipe works with mouse as well but often causes text selection. */
+body {
+background:#000000;
+}
+
+#page * {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+/* -------------------------
+	::	Page/Body
+----------------------------*/
+.ui-overlay-c, .ui-panel-content-wrap  { 
 	background: #1e1e1e;
 }
 
@@ -6,38 +22,135 @@
 	background: transparent !important;
 }
 
-
+/* -------------------------
+	::	HEADER
+----------------------------*/
 #header {
-border-top:2px solid #F80749;
-height:60px;
+	border-top:2px solid #F80749;
+	height:40px;
+}
+
+#header .ui-title {
+  margin-top:4px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0px;
+}
+
+#header .ui-btn-inner {
+	padding-top:0px;
+	margin:0px;
+}
+
+#header .panel-left {
+	font-size:22px;
+}
+
+#header .ui-btn {
+	background: none;
+	border: none;
+	top: 9px;
+}
+#header .ui-btn-inner {
+	border: none;
+}
+
+#header .ui-focus,
+#header .ui-btn:focus {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* -------------------------
+	::	CONTENT
+----------------------------*/
+#content {
+  padding:0px;
+  color:#999999;
+}
+
+/* -------------------------
+	::	FOOTER
+----------------------------*/
+#footer {
+	height:50px;
+}
+
+#footer .ui-btn-inner {
+	line-height:20px;
+	height:50px;
+  padding:2px 2px 2px 2px;
+  text-align:center;
+}
+
+#footer .ui-btn-text {
+	font-size:10px;
+}
+
+#footer .ui-btn-inner .icon {
+	font-size:26px;
 }
 
 /* -------------------------
 	::	PANEL 
 ----------------------------*/
-
-/* Swipe works with mouse as well but often causes text selection. */
-#page * {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
-/* Arrow only buttons in the header. */
-#page .ui-header .ui-btn {
-    background: none;
-    border: none;
-    top: 9px;
-}
-#page .ui-header .ui-btn-inner {
-    border: none;
-}
-
 #left-panel {
-z-index:1000;
-height:100%;
+	background:#1B1B1B;
+  border-right:1px solid #272727;
 }
-#page {
-z-index:10;
+
+#left-panel .ui-panel-inner { 
+	padding:0px;
 }
+#left-panel ul { 
+	width:100%; 
+	margin:0px;
+}
+
+#left-panel li {
+	background:none; 
+  border:none;
+}
+
+#left-panel .ui-li .ui-li {
+	border-top:1px solid #272727;
+  border-bottom:1px solid #000;
+}
+
+#left-panel li a {
+	height:20px;
+	font-size:12px;
+	line-height:20px;
+	background:none;
+  border:none;
+}
+
+#left-panel .header {	
+  border-top:1px solid #F80749;
+	height:41px;
+	background: #111111 /*{a-bar-background-color}*/;
+	color: #fff /*{a-bar-color}*/;
+	font-weight: bold;
+	text-shadow: 0 /*{a-bar-shadow-x}*/ -1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #000 /*{a-bar-shadow-color}*/;
+	line-height:41px;
+}
+
+#left-panel .header a {	
+	color:#fff;
+	font-size:14px;
+	text-decoration:none;
+	float:right;
+	margin-right:12px;
+}
+
+#left-panel .header .title {
+	font-size:14px;
+	margin:0px 0px 0px 15px;
+	padding:0;
+	float:left;
+}
+
+
+
+
