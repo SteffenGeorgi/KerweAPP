@@ -1,0 +1,1527 @@
+@font-face {
+	font-family: 'App';
+	src:url('../res/fonts/App.eot');
+	src:url('../res/fonts/App.eot?#iefix') format('embedded-opentype'),
+		url('../res/fonts/App.woff') format('woff'),
+		url('../res/fonts/App.ttf') format('truetype'),
+		url('../res/fonts/App.svg#App') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-font-icon]:before {
+	font-family: 'App';
+	content: attr(data-font-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="ficon-"] {
+*/
+.ficon-home, .ficon-home-2, .ficon-home-3, .ficon-office, .ficon-newspaper, .ficon-pencil, .ficon-pencil-2, .ficon-quill, .ficon-pen, .ficon-blog, .ficon-droplet, .ficon-paint-format, .ficon-image, .ficon-image-2, .ficon-images, .ficon-camera, .ficon-music, .ficon-headphones, .ficon-play, .ficon-film, .ficon-camera-2, .ficon-dice, .ficon-pacman, .ficon-spades, .ficon-clubs, .ficon-diamonds, .ficon-pawn, .ficon-bullhorn, .ficon-connection, .ficon-podcast, .ficon-feed, .ficon-book, .ficon-books, .ficon-library, .ficon-file, .ficon-profile, .ficon-file-2, .ficon-file-3, .ficon-file-4, .ficon-copy, .ficon-copy-2, .ficon-copy-3, .ficon-paste, .ficon-paste-2, .ficon-paste-3, .ficon-stack, .ficon-folder, .ficon-folder-open, .ficon-tag, .ficon-tags, .ficon-barcode, .ficon-qrcode, .ficon-ticket, .ficon-cart, .ficon-cart-2, .ficon-cart-3, .ficon-coin, .ficon-credit, .ficon-calculate, .ficon-support, .ficon-phone, .ficon-phone-hang-up, .ficon-address-book, .ficon-notebook, .ficon-envelop, .ficon-pushpin, .ficon-location, .ficon-location-2, .ficon-compass, .ficon-map, .ficon-map-2, .ficon-history, .ficon-clock, .ficon-clock-2, .ficon-alarm, .ficon-alarm-2, .ficon-bell, .ficon-stopwatch, .ficon-calendar, .ficon-calendar-2, .ficon-print, .ficon-keyboard, .ficon-screen, .ficon-laptop, .ficon-mobile, .ficon-mobile-2, .ficon-tablet, .ficon-tv, .ficon-cabinet, .ficon-drawer, .ficon-drawer-2, .ficon-drawer-3, .ficon-box-add, .ficon-box-remove, .ficon-download, .ficon-upload, .ficon-disk, .ficon-storage, .ficon-undo, .ficon-redo, .ficon-flip, .ficon-flip-2, .ficon-undo-2, .ficon-redo-2, .ficon-forward, .ficon-reply, .ficon-bubble, .ficon-bubbles, .ficon-bubbles-2, .ficon-bubble-2, .ficon-bubbles-3, .ficon-bubbles-4, .ficon-user, .ficon-users, .ficon-user-2, .ficon-users-2, .ficon-user-3, .ficon-user-4, .ficon-quotes-left, .ficon-busy, .ficon-spinner, .ficon-spinner-2, .ficon-spinner-3, .ficon-spinner-4, .ficon-spinner-5, .ficon-spinner-6, .ficon-binoculars, .ficon-search, .ficon-zoom-in, .ficon-zoom-out, .ficon-expand, .ficon-contract, .ficon-expand-2, .ficon-contract-2, .ficon-key, .ficon-key-2, .ficon-lock, .ficon-lock-2, .ficon-unlocked, .ficon-wrench, .ficon-settings, .ficon-equalizer, .ficon-cog, .ficon-cogs, .ficon-cog-2, .ficon-hammer, .ficon-wand, .ficon-aid, .ficon-bug, .ficon-pie, .ficon-stats, .ficon-bars, .ficon-bars-2, .ficon-gift, .ficon-trophy, .ficon-glass, .ficon-mug, .ficon-food, .ficon-leaf, .ficon-rocket, .ficon-meter, .ficon-meter2, .ficon-dashboard, .ficon-hammer-2, .ficon-fire, .ficon-lab, .ficon-magnet, .ficon-remove, .ficon-remove-2, .ficon-briefcase, .ficon-airplane, .ficon-truck, .ficon-road, .ficon-accessibility, .ficon-target, .ficon-shield, .ficon-lightning, .ficon-switch, .ficon-power-cord, .ficon-signup, .ficon-list, .ficon-list-2, .ficon-numbered-list, .ficon-menu, .ficon-menu-2, .ficon-tree, .ficon-cloud, .ficon-cloud-download, .ficon-cloud-upload, .ficon-download-2, .ficon-upload-2, .ficon-download-3, .ficon-upload-3, .ficon-globe, .ficon-earth, .ficon-link, .ficon-flag, .ficon-attachment, .ficon-eye, .ficon-eye-blocked, .ficon-eye-2, .ficon-bookmark, .ficon-bookmarks, .ficon-brightness-medium, .ficon-brightness-contrast, .ficon-contrast, .ficon-star, .ficon-star-2, .ficon-star-3, .ficon-heart, .ficon-heart-2, .ficon-heart-broken, .ficon-thumbs-up, .ficon-thumbs-up-2, .ficon-happy, .ficon-happy-2, .ficon-smiley, .ficon-smiley-2, .ficon-tongue, .ficon-tongue-2, .ficon-sad, .ficon-sad-2, .ficon-wink, .ficon-wink-2, .ficon-grin, .ficon-grin-2, .ficon-cool, .ficon-cool-2, .ficon-angry, .ficon-angry-2, .ficon-evil, .ficon-evil-2, .ficon-shocked, .ficon-shocked-2, .ficon-confused, .ficon-confused-2, .ficon-neutral, .ficon-neutral-2, .ficon-wondering, .ficon-wondering-2, .ficon-point-up, .ficon-point-right, .ficon-point-down, .ficon-point-left, .ficon-warning, .ficon-notification, .ficon-question, .ficon-info, .ficon-info-2, .ficon-blocked, .ficon-cancel-circle, .ficon-checkmark-circle, .ficon-spam, .ficon-close, .ficon-checkmark, .ficon-checkmark-2, .ficon-spell-check, .ficon-minus, .ficon-plus, .ficon-enter, .ficon-exit, .ficon-play-2, .ficon-pause, .ficon-stop, .ficon-backward, .ficon-forward-2, .ficon-play-3, .ficon-pause-2, .ficon-stop-2, .ficon-backward-2, .ficon-forward-3, .ficon-first, .ficon-last, .ficon-previous, .ficon-next, .ficon-eject, .ficon-volume-high, .ficon-volume-medium, .ficon-volume-low, .ficon-volume-mute, .ficon-volume-mute-2, .ficon-volume-increase, .ficon-volume-decrease, .ficon-loop, .ficon-loop-2, .ficon-loop-3, .ficon-shuffle, .ficon-arrow-up-left, .ficon-arrow-up, .ficon-arrow-up-right, .ficon-arrow-right, .ficon-arrow-down-right, .ficon-arrow-down, .ficon-arrow-down-left, .ficon-arrow-left, .ficon-arrow-up-left-2, .ficon-arrow-up-2, .ficon-arrow-up-right-2, .ficon-arrow-right-2, .ficon-arrow-down-right-2, .ficon-arrow-down-2, .ficon-arrow-down-left-2, .ficon-arrow-left-2, .ficon-arrow-up-left-3, .ficon-arrow-up-3, .ficon-arrow-up-right-3, .ficon-arrow-right-3, .ficon-arrow-down-right-3, .ficon-arrow-down-3, .ficon-arrow-down-left-3, .ficon-arrow-left-3, .ficon-tab, .ficon-checkbox-checked, .ficon-checkbox-unchecked, .ficon-checkbox-partial, .ficon-radio-checked, .ficon-radio-unchecked, .ficon-crop, .ficon-scissors, .ficon-filter, .ficon-filter-2, .ficon-font, .ficon-text-height, .ficon-text-width, .ficon-bold, .ficon-underline, .ficon-italic, .ficon-strikethrough, .ficon-omega, .ficon-sigma, .ficon-table, .ficon-table-2, .ficon-insert-template, .ficon-pilcrow, .ficon-left-to-right, .ficon-right-to-left, .ficon-paragraph-left, .ficon-paragraph-center, .ficon-paragraph-right, .ficon-paragraph-justify, .ficon-paragraph-left-2, .ficon-paragraph-center-2, .ficon-paragraph-right-2, .ficon-paragraph-justify-2, .ficon-indent-increase, .ficon-indent-decrease, .ficon-new-tab, .ficon-embed, .ficon-code, .ficon-console, .ficon-share, .ficon-mail, .ficon-mail-2, .ficon-mail-3, .ficon-mail-4, .ficon-google, .ficon-google-plus, .ficon-google-plus-2, .ficon-google-plus-3, .ficon-google-plus-4, .ficon-google-drive, .ficon-facebook, .ficon-facebook-2, .ficon-facebook-3, .ficon-instagram, .ficon-twitter, .ficon-twitter-2, .ficon-twitter-3, .ficon-feed-2, .ficon-feed-3, .ficon-feed-4, .ficon-youtube, .ficon-youtube-2, .ficon-vimeo, .ficon-vimeo2, .ficon-vimeo-2, .ficon-lanyrd, .ficon-flickr, .ficon-flickr-2, .ficon-flickr-3, .ficon-flickr-4, .ficon-picassa, .ficon-picassa-2, .ficon-dribbble, .ficon-dribbble-2, .ficon-dribbble-3, .ficon-forrst, .ficon-forrst-2, .ficon-deviantart, .ficon-deviantart-2, .ficon-steam, .ficon-steam-2, .ficon-github, .ficon-github-2, .ficon-github-3, .ficon-github-4, .ficon-github-5, .ficon-wordpress, .ficon-wordpress-2, .ficon-joomla, .ficon-blogger, .ficon-blogger-2, .ficon-tumblr, .ficon-tumblr-2, .ficon-yahoo, .ficon-tux, .ficon-apple, .ficon-finder, .ficon-android, .ficon-windows, .ficon-windows8, .ficon-soundcloud, .ficon-soundcloud-2, .ficon-skype, .ficon-reddit, .ficon-linkedin, .ficon-lastfm, .ficon-lastfm-2, .ficon-delicious, .ficon-stumbleupon, .ficon-stumbleupon-2, .ficon-stackoverflow, .ficon-pinterest, .ficon-pinterest-2, .ficon-xing, .ficon-xing-2, .ficon-flattr, .ficon-foursquare, .ficon-foursquare-2, .ficon-paypal, .ficon-paypal-2, .ficon-paypal-3, .ficon-yelp, .ficon-libreoffice, .ficon-file-pdf, .ficon-file-openoffice, .ficon-file-word, .ficon-file-excel, .ficon-file-zip, .ficon-file-powerpoint, .ficon-file-xml, .ficon-file-css, .ficon-html5, .ficon-html5-2, .ficon-css3, .ficon-chrome, .ficon-firefox, .ficon-IE, .ficon-opera, .ficon-safari, .ficon-sunrise, .ficon-sun, .ficon-moon, .ficon-sun-2, .ficon-windy, .ficon-wind, .ficon-snowflake, .ficon-cloudy, .ficon-cloud-2, .ficon-weather, .ficon-weather-2, .ficon-weather-3, .ficon-lines, .ficon-cloud-3, .ficon-lightning-2, .ficon-lightning-3, .ficon-rainy, .ficon-rainy-2, .ficon-windy-2, .ficon-windy-3, .ficon-snowy, .ficon-snowy-2, .ficon-snowy-3, .ficon-weather-4, .ficon-cloudy-2, .ficon-cloud-4, .ficon-lightning-4, .ficon-sun-3, .ficon-moon-2, .ficon-cloudy-3, .ficon-cloud-5, .ficon-cloud-6, .ficon-lightning-5, .ficon-rainy-3, .ficon-rainy-4, .ficon-windy-4, .ficon-windy-5, .ficon-snowy-4, .ficon-snowy-5, .ficon-weather-5, .ficon-cloudy-4, .ficon-lightning-6, .ficon-thermometer, .ficon-compass-2, .ficon-none, .ficon-Celsius {
+	font-family: 'App';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.ficon-home:before {
+	content: "\21";
+}
+.ficon-home-2:before {
+	content: "\22";
+}
+.ficon-home-3:before {
+	content: "\23";
+}
+.ficon-office:before {
+	content: "\24";
+}
+.ficon-newspaper:before {
+	content: "\25";
+}
+.ficon-pencil:before {
+	content: "\26";
+}
+.ficon-pencil-2:before {
+	content: "\27";
+}
+.ficon-quill:before {
+	content: "\28";
+}
+.ficon-pen:before {
+	content: "\29";
+}
+.ficon-blog:before {
+	content: "\2a";
+}
+.ficon-droplet:before {
+	content: "\2b";
+}
+.ficon-paint-format:before {
+	content: "\2c";
+}
+.ficon-image:before {
+	content: "\2d";
+}
+.ficon-image-2:before {
+	content: "\2e";
+}
+.ficon-images:before {
+	content: "\2f";
+}
+.ficon-camera:before {
+	content: "\30";
+}
+.ficon-music:before {
+	content: "\31";
+}
+.ficon-headphones:before {
+	content: "\32";
+}
+.ficon-play:before {
+	content: "\33";
+}
+.ficon-film:before {
+	content: "\34";
+}
+.ficon-camera-2:before {
+	content: "\35";
+}
+.ficon-dice:before {
+	content: "\36";
+}
+.ficon-pacman:before {
+	content: "\37";
+}
+.ficon-spades:before {
+	content: "\38";
+}
+.ficon-clubs:before {
+	content: "\39";
+}
+.ficon-diamonds:before {
+	content: "\3a";
+}
+.ficon-pawn:before {
+	content: "\3b";
+}
+.ficon-bullhorn:before {
+	content: "\3c";
+}
+.ficon-connection:before {
+	content: "\3d";
+}
+.ficon-podcast:before {
+	content: "\3e";
+}
+.ficon-feed:before {
+	content: "\3f";
+}
+.ficon-book:before {
+	content: "\40";
+}
+.ficon-books:before {
+	content: "\41";
+}
+.ficon-library:before {
+	content: "\42";
+}
+.ficon-file:before {
+	content: "\43";
+}
+.ficon-profile:before {
+	content: "\44";
+}
+.ficon-file-2:before {
+	content: "\45";
+}
+.ficon-file-3:before {
+	content: "\46";
+}
+.ficon-file-4:before {
+	content: "\47";
+}
+.ficon-copy:before {
+	content: "\48";
+}
+.ficon-copy-2:before {
+	content: "\49";
+}
+.ficon-copy-3:before {
+	content: "\4a";
+}
+.ficon-paste:before {
+	content: "\4b";
+}
+.ficon-paste-2:before {
+	content: "\4c";
+}
+.ficon-paste-3:before {
+	content: "\4d";
+}
+.ficon-stack:before {
+	content: "\4e";
+}
+.ficon-folder:before {
+	content: "\4f";
+}
+.ficon-folder-open:before {
+	content: "\50";
+}
+.ficon-tag:before {
+	content: "\51";
+}
+.ficon-tags:before {
+	content: "\52";
+}
+.ficon-barcode:before {
+	content: "\53";
+}
+.ficon-qrcode:before {
+	content: "\54";
+}
+.ficon-ticket:before {
+	content: "\55";
+}
+.ficon-cart:before {
+	content: "\56";
+}
+.ficon-cart-2:before {
+	content: "\57";
+}
+.ficon-cart-3:before {
+	content: "\58";
+}
+.ficon-coin:before {
+	content: "\59";
+}
+.ficon-credit:before {
+	content: "\5a";
+}
+.ficon-calculate:before {
+	content: "\5b";
+}
+.ficon-support:before {
+	content: "\5c";
+}
+.ficon-phone:before {
+	content: "\5d";
+}
+.ficon-phone-hang-up:before {
+	content: "\5e";
+}
+.ficon-address-book:before {
+	content: "\5f";
+}
+.ficon-notebook:before {
+	content: "\60";
+}
+.ficon-envelop:before {
+	content: "\61";
+}
+.ficon-pushpin:before {
+	content: "\62";
+}
+.ficon-location:before {
+	content: "\63";
+}
+.ficon-location-2:before {
+	content: "\64";
+}
+.ficon-compass:before {
+	content: "\65";
+}
+.ficon-map:before {
+	content: "\66";
+}
+.ficon-map-2:before {
+	content: "\67";
+}
+.ficon-history:before {
+	content: "\68";
+}
+.ficon-clock:before {
+	content: "\69";
+}
+.ficon-clock-2:before {
+	content: "\6a";
+}
+.ficon-alarm:before {
+	content: "\6b";
+}
+.ficon-alarm-2:before {
+	content: "\6c";
+}
+.ficon-bell:before {
+	content: "\6d";
+}
+.ficon-stopwatch:before {
+	content: "\6e";
+}
+.ficon-calendar:before {
+	content: "\6f";
+}
+.ficon-calendar-2:before {
+	content: "\70";
+}
+.ficon-print:before {
+	content: "\71";
+}
+.ficon-keyboard:before {
+	content: "\72";
+}
+.ficon-screen:before {
+	content: "\73";
+}
+.ficon-laptop:before {
+	content: "\74";
+}
+.ficon-mobile:before {
+	content: "\75";
+}
+.ficon-mobile-2:before {
+	content: "\76";
+}
+.ficon-tablet:before {
+	content: "\77";
+}
+.ficon-tv:before {
+	content: "\78";
+}
+.ficon-cabinet:before {
+	content: "\79";
+}
+.ficon-drawer:before {
+	content: "\7a";
+}
+.ficon-drawer-2:before {
+	content: "\7b";
+}
+.ficon-drawer-3:before {
+	content: "\7c";
+}
+.ficon-box-add:before {
+	content: "\7d";
+}
+.ficon-box-remove:before {
+	content: "\7e";
+}
+.ficon-download:before {
+	content: "\e000";
+}
+.ficon-upload:before {
+	content: "\e001";
+}
+.ficon-disk:before {
+	content: "\e002";
+}
+.ficon-storage:before {
+	content: "\e003";
+}
+.ficon-undo:before {
+	content: "\e004";
+}
+.ficon-redo:before {
+	content: "\e005";
+}
+.ficon-flip:before {
+	content: "\e006";
+}
+.ficon-flip-2:before {
+	content: "\e007";
+}
+.ficon-undo-2:before {
+	content: "\e008";
+}
+.ficon-redo-2:before {
+	content: "\e009";
+}
+.ficon-forward:before {
+	content: "\e00a";
+}
+.ficon-reply:before {
+	content: "\e00b";
+}
+.ficon-bubble:before {
+	content: "\e00c";
+}
+.ficon-bubbles:before {
+	content: "\e00d";
+}
+.ficon-bubbles-2:before {
+	content: "\e00e";
+}
+.ficon-bubble-2:before {
+	content: "\e00f";
+}
+.ficon-bubbles-3:before {
+	content: "\e010";
+}
+.ficon-bubbles-4:before {
+	content: "\e011";
+}
+.ficon-user:before {
+	content: "\e012";
+}
+.ficon-users:before {
+	content: "\e013";
+}
+.ficon-user-2:before {
+	content: "\e014";
+}
+.ficon-users-2:before {
+	content: "\e015";
+}
+.ficon-user-3:before {
+	content: "\e016";
+}
+.ficon-user-4:before {
+	content: "\e017";
+}
+.ficon-quotes-left:before {
+	content: "\e018";
+}
+.ficon-busy:before {
+	content: "\e019";
+}
+.ficon-spinner:before {
+	content: "\e01a";
+}
+.ficon-spinner-2:before {
+	content: "\e01b";
+}
+.ficon-spinner-3:before {
+	content: "\e01c";
+}
+.ficon-spinner-4:before {
+	content: "\e01d";
+}
+.ficon-spinner-5:before {
+	content: "\e01e";
+}
+.ficon-spinner-6:before {
+	content: "\e01f";
+}
+.ficon-binoculars:before {
+	content: "\e020";
+}
+.ficon-search:before {
+	content: "\e021";
+}
+.ficon-zoom-in:before {
+	content: "\e022";
+}
+.ficon-zoom-out:before {
+	content: "\e023";
+}
+.ficon-expand:before {
+	content: "\e024";
+}
+.ficon-contract:before {
+	content: "\e025";
+}
+.ficon-expand-2:before {
+	content: "\e026";
+}
+.ficon-contract-2:before {
+	content: "\e027";
+}
+.ficon-key:before {
+	content: "\e028";
+}
+.ficon-key-2:before {
+	content: "\e029";
+}
+.ficon-lock:before {
+	content: "\e02a";
+}
+.ficon-lock-2:before {
+	content: "\e02b";
+}
+.ficon-unlocked:before {
+	content: "\e02c";
+}
+.ficon-wrench:before {
+	content: "\e02d";
+}
+.ficon-settings:before {
+	content: "\e02e";
+}
+.ficon-equalizer:before {
+	content: "\e02f";
+}
+.ficon-cog:before {
+	content: "\e030";
+}
+.ficon-cogs:before {
+	content: "\e031";
+}
+.ficon-cog-2:before {
+	content: "\e032";
+}
+.ficon-hammer:before {
+	content: "\e033";
+}
+.ficon-wand:before {
+	content: "\e034";
+}
+.ficon-aid:before {
+	content: "\e035";
+}
+.ficon-bug:before {
+	content: "\e036";
+}
+.ficon-pie:before {
+	content: "\e037";
+}
+.ficon-stats:before {
+	content: "\e038";
+}
+.ficon-bars:before {
+	content: "\e039";
+}
+.ficon-bars-2:before {
+	content: "\e03a";
+}
+.ficon-gift:before {
+	content: "\e03b";
+}
+.ficon-trophy:before {
+	content: "\e03c";
+}
+.ficon-glass:before {
+	content: "\e03d";
+}
+.ficon-mug:before {
+	content: "\e03e";
+}
+.ficon-food:before {
+	content: "\e03f";
+}
+.ficon-leaf:before {
+	content: "\e040";
+}
+.ficon-rocket:before {
+	content: "\e041";
+}
+.ficon-meter:before {
+	content: "\e042";
+}
+.ficon-meter2:before {
+	content: "\e043";
+}
+.ficon-dashboard:before {
+	content: "\e044";
+}
+.ficon-hammer-2:before {
+	content: "\e045";
+}
+.ficon-fire:before {
+	content: "\e046";
+}
+.ficon-lab:before {
+	content: "\e047";
+}
+.ficon-magnet:before {
+	content: "\e048";
+}
+.ficon-remove:before {
+	content: "\e049";
+}
+.ficon-remove-2:before {
+	content: "\e04a";
+}
+.ficon-briefcase:before {
+	content: "\e04b";
+}
+.ficon-airplane:before {
+	content: "\e04c";
+}
+.ficon-truck:before {
+	content: "\e04d";
+}
+.ficon-road:before {
+	content: "\e04e";
+}
+.ficon-accessibility:before {
+	content: "\e04f";
+}
+.ficon-target:before {
+	content: "\e050";
+}
+.ficon-shield:before {
+	content: "\e051";
+}
+.ficon-lightning:before {
+	content: "\e052";
+}
+.ficon-switch:before {
+	content: "\e053";
+}
+.ficon-power-cord:before {
+	content: "\e054";
+}
+.ficon-signup:before {
+	content: "\e055";
+}
+.ficon-list:before {
+	content: "\e056";
+}
+.ficon-list-2:before {
+	content: "\e057";
+}
+.ficon-numbered-list:before {
+	content: "\e058";
+}
+.ficon-menu:before {
+	content: "\e059";
+}
+.ficon-menu-2:before {
+	content: "\e05a";
+}
+.ficon-tree:before {
+	content: "\e05b";
+}
+.ficon-cloud:before {
+	content: "\e05c";
+}
+.ficon-cloud-download:before {
+	content: "\e05d";
+}
+.ficon-cloud-upload:before {
+	content: "\e05e";
+}
+.ficon-download-2:before {
+	content: "\e05f";
+}
+.ficon-upload-2:before {
+	content: "\e060";
+}
+.ficon-download-3:before {
+	content: "\e061";
+}
+.ficon-upload-3:before {
+	content: "\e062";
+}
+.ficon-globe:before {
+	content: "\e063";
+}
+.ficon-earth:before {
+	content: "\e064";
+}
+.ficon-link:before {
+	content: "\e065";
+}
+.ficon-flag:before {
+	content: "\e066";
+}
+.ficon-attachment:before {
+	content: "\e067";
+}
+.ficon-eye:before {
+	content: "\e068";
+}
+.ficon-eye-blocked:before {
+	content: "\e069";
+}
+.ficon-eye-2:before {
+	content: "\e06a";
+}
+.ficon-bookmark:before {
+	content: "\e06b";
+}
+.ficon-bookmarks:before {
+	content: "\e06c";
+}
+.ficon-brightness-medium:before {
+	content: "\e06d";
+}
+.ficon-brightness-contrast:before {
+	content: "\e06e";
+}
+.ficon-contrast:before {
+	content: "\e06f";
+}
+.ficon-star:before {
+	content: "\e070";
+}
+.ficon-star-2:before {
+	content: "\e071";
+}
+.ficon-star-3:before {
+	content: "\e072";
+}
+.ficon-heart:before {
+	content: "\e073";
+}
+.ficon-heart-2:before {
+	content: "\e074";
+}
+.ficon-heart-broken:before {
+	content: "\e075";
+}
+.ficon-thumbs-up:before {
+	content: "\e076";
+}
+.ficon-thumbs-up-2:before {
+	content: "\e077";
+}
+.ficon-happy:before {
+	content: "\e078";
+}
+.ficon-happy-2:before {
+	content: "\e079";
+}
+.ficon-smiley:before {
+	content: "\e07a";
+}
+.ficon-smiley-2:before {
+	content: "\e07b";
+}
+.ficon-tongue:before {
+	content: "\e07c";
+}
+.ficon-tongue-2:before {
+	content: "\e07d";
+}
+.ficon-sad:before {
+	content: "\e07e";
+}
+.ficon-sad-2:before {
+	content: "\e07f";
+}
+.ficon-wink:before {
+	content: "\e080";
+}
+.ficon-wink-2:before {
+	content: "\e081";
+}
+.ficon-grin:before {
+	content: "\e082";
+}
+.ficon-grin-2:before {
+	content: "\e083";
+}
+.ficon-cool:before {
+	content: "\e084";
+}
+.ficon-cool-2:before {
+	content: "\e085";
+}
+.ficon-angry:before {
+	content: "\e086";
+}
+.ficon-angry-2:before {
+	content: "\e087";
+}
+.ficon-evil:before {
+	content: "\e088";
+}
+.ficon-evil-2:before {
+	content: "\e089";
+}
+.ficon-shocked:before {
+	content: "\e08a";
+}
+.ficon-shocked-2:before {
+	content: "\e08b";
+}
+.ficon-confused:before {
+	content: "\e08c";
+}
+.ficon-confused-2:before {
+	content: "\e08d";
+}
+.ficon-neutral:before {
+	content: "\e08e";
+}
+.ficon-neutral-2:before {
+	content: "\e08f";
+}
+.ficon-wondering:before {
+	content: "\e090";
+}
+.ficon-wondering-2:before {
+	content: "\e091";
+}
+.ficon-point-up:before {
+	content: "\e092";
+}
+.ficon-point-right:before {
+	content: "\e093";
+}
+.ficon-point-down:before {
+	content: "\e094";
+}
+.ficon-point-left:before {
+	content: "\e095";
+}
+.ficon-warning:before {
+	content: "\e096";
+}
+.ficon-notification:before {
+	content: "\e097";
+}
+.ficon-question:before {
+	content: "\e098";
+}
+.ficon-info:before {
+	content: "\e099";
+}
+.ficon-info-2:before {
+	content: "\e09a";
+}
+.ficon-blocked:before {
+	content: "\e09b";
+}
+.ficon-cancel-circle:before {
+	content: "\e09c";
+}
+.ficon-checkmark-circle:before {
+	content: "\e09d";
+}
+.ficon-spam:before {
+	content: "\e09e";
+}
+.ficon-close:before {
+	content: "\e09f";
+}
+.ficon-checkmark:before {
+	content: "\e0a0";
+}
+.ficon-checkmark-2:before {
+	content: "\e0a1";
+}
+.ficon-spell-check:before {
+	content: "\e0a2";
+}
+.ficon-minus:before {
+	content: "\e0a3";
+}
+.ficon-plus:before {
+	content: "\e0a4";
+}
+.ficon-enter:before {
+	content: "\e0a5";
+}
+.ficon-exit:before {
+	content: "\e0a6";
+}
+.ficon-play-2:before {
+	content: "\e0a7";
+}
+.ficon-pause:before {
+	content: "\e0a8";
+}
+.ficon-stop:before {
+	content: "\e0a9";
+}
+.ficon-backward:before {
+	content: "\e0aa";
+}
+.ficon-forward-2:before {
+	content: "\e0ab";
+}
+.ficon-play-3:before {
+	content: "\e0ac";
+}
+.ficon-pause-2:before {
+	content: "\e0ad";
+}
+.ficon-stop-2:before {
+	content: "\e0ae";
+}
+.ficon-backward-2:before {
+	content: "\e0af";
+}
+.ficon-forward-3:before {
+	content: "\e0b0";
+}
+.ficon-first:before {
+	content: "\e0b1";
+}
+.ficon-last:before {
+	content: "\e0b2";
+}
+.ficon-previous:before {
+	content: "\e0b3";
+}
+.ficon-next:before {
+	content: "\e0b4";
+}
+.ficon-eject:before {
+	content: "\e0b5";
+}
+.ficon-volume-high:before {
+	content: "\e0b6";
+}
+.ficon-volume-medium:before {
+	content: "\e0b7";
+}
+.ficon-volume-low:before {
+	content: "\e0b8";
+}
+.ficon-volume-mute:before {
+	content: "\e0b9";
+}
+.ficon-volume-mute-2:before {
+	content: "\e0ba";
+}
+.ficon-volume-increase:before {
+	content: "\e0bb";
+}
+.ficon-volume-decrease:before {
+	content: "\e0bc";
+}
+.ficon-loop:before {
+	content: "\e0bd";
+}
+.ficon-loop-2:before {
+	content: "\e0be";
+}
+.ficon-loop-3:before {
+	content: "\e0bf";
+}
+.ficon-shuffle:before {
+	content: "\e0c0";
+}
+.ficon-arrow-up-left:before {
+	content: "\e0c1";
+}
+.ficon-arrow-up:before {
+	content: "\e0c2";
+}
+.ficon-arrow-up-right:before {
+	content: "\e0c3";
+}
+.ficon-arrow-right:before {
+	content: "\e0c4";
+}
+.ficon-arrow-down-right:before {
+	content: "\e0c5";
+}
+.ficon-arrow-down:before {
+	content: "\e0c6";
+}
+.ficon-arrow-down-left:before {
+	content: "\e0c7";
+}
+.ficon-arrow-left:before {
+	content: "\e0c8";
+}
+.ficon-arrow-up-left-2:before {
+	content: "\e0c9";
+}
+.ficon-arrow-up-2:before {
+	content: "\e0ca";
+}
+.ficon-arrow-up-right-2:before {
+	content: "\e0cb";
+}
+.ficon-arrow-right-2:before {
+	content: "\e0cc";
+}
+.ficon-arrow-down-right-2:before {
+	content: "\e0cd";
+}
+.ficon-arrow-down-2:before {
+	content: "\e0ce";
+}
+.ficon-arrow-down-left-2:before {
+	content: "\e0cf";
+}
+.ficon-arrow-left-2:before {
+	content: "\e0d0";
+}
+.ficon-arrow-up-left-3:before {
+	content: "\e0d1";
+}
+.ficon-arrow-up-3:before {
+	content: "\e0d2";
+}
+.ficon-arrow-up-right-3:before {
+	content: "\e0d3";
+}
+.ficon-arrow-right-3:before {
+	content: "\e0d4";
+}
+.ficon-arrow-down-right-3:before {
+	content: "\e0d5";
+}
+.ficon-arrow-down-3:before {
+	content: "\e0d6";
+}
+.ficon-arrow-down-left-3:before {
+	content: "\e0d7";
+}
+.ficon-arrow-left-3:before {
+	content: "\e0d8";
+}
+.ficon-tab:before {
+	content: "\e0d9";
+}
+.ficon-checkbox-checked:before {
+	content: "\e0da";
+}
+.ficon-checkbox-unchecked:before {
+	content: "\e0db";
+}
+.ficon-checkbox-partial:before {
+	content: "\e0dc";
+}
+.ficon-radio-checked:before {
+	content: "\e0dd";
+}
+.ficon-radio-unchecked:before {
+	content: "\e0de";
+}
+.ficon-crop:before {
+	content: "\e0df";
+}
+.ficon-scissors:before {
+	content: "\e0e0";
+}
+.ficon-filter:before {
+	content: "\e0e1";
+}
+.ficon-filter-2:before {
+	content: "\e0e2";
+}
+.ficon-font:before {
+	content: "\e0e3";
+}
+.ficon-text-height:before {
+	content: "\e0e4";
+}
+.ficon-text-width:before {
+	content: "\e0e5";
+}
+.ficon-bold:before {
+	content: "\e0e6";
+}
+.ficon-underline:before {
+	content: "\e0e7";
+}
+.ficon-italic:before {
+	content: "\e0e8";
+}
+.ficon-strikethrough:before {
+	content: "\e0e9";
+}
+.ficon-omega:before {
+	content: "\e0ea";
+}
+.ficon-sigma:before {
+	content: "\e0eb";
+}
+.ficon-table:before {
+	content: "\e0ec";
+}
+.ficon-table-2:before {
+	content: "\e0ed";
+}
+.ficon-insert-template:before {
+	content: "\e0ee";
+}
+.ficon-pilcrow:before {
+	content: "\e0ef";
+}
+.ficon-left-to-right:before {
+	content: "\e0f0";
+}
+.ficon-right-to-left:before {
+	content: "\e0f1";
+}
+.ficon-paragraph-left:before {
+	content: "\e0f2";
+}
+.ficon-paragraph-center:before {
+	content: "\e0f3";
+}
+.ficon-paragraph-right:before {
+	content: "\e0f4";
+}
+.ficon-paragraph-justify:before {
+	content: "\e0f5";
+}
+.ficon-paragraph-left-2:before {
+	content: "\e0f6";
+}
+.ficon-paragraph-center-2:before {
+	content: "\e0f7";
+}
+.ficon-paragraph-right-2:before {
+	content: "\e0f8";
+}
+.ficon-paragraph-justify-2:before {
+	content: "\e0f9";
+}
+.ficon-indent-increase:before {
+	content: "\e0fa";
+}
+.ficon-indent-decrease:before {
+	content: "\e0fb";
+}
+.ficon-new-tab:before {
+	content: "\e0fc";
+}
+.ficon-embed:before {
+	content: "\e0fd";
+}
+.ficon-code:before {
+	content: "\e0fe";
+}
+.ficon-console:before {
+	content: "\e0ff";
+}
+.ficon-share:before {
+	content: "\e100";
+}
+.ficon-mail:before {
+	content: "\e101";
+}
+.ficon-mail-2:before {
+	content: "\e102";
+}
+.ficon-mail-3:before {
+	content: "\e103";
+}
+.ficon-mail-4:before {
+	content: "\e104";
+}
+.ficon-google:before {
+	content: "\e105";
+}
+.ficon-google-plus:before {
+	content: "\e106";
+}
+.ficon-google-plus-2:before {
+	content: "\e107";
+}
+.ficon-google-plus-3:before {
+	content: "\e108";
+}
+.ficon-google-plus-4:before {
+	content: "\e109";
+}
+.ficon-google-drive:before {
+	content: "\e10a";
+}
+.ficon-facebook:before {
+	content: "\e10b";
+}
+.ficon-facebook-2:before {
+	content: "\e10c";
+}
+.ficon-facebook-3:before {
+	content: "\e10d";
+}
+.ficon-instagram:before {
+	content: "\e10e";
+}
+.ficon-twitter:before {
+	content: "\e10f";
+}
+.ficon-twitter-2:before {
+	content: "\e110";
+}
+.ficon-twitter-3:before {
+	content: "\e111";
+}
+.ficon-feed-2:before {
+	content: "\e112";
+}
+.ficon-feed-3:before {
+	content: "\e113";
+}
+.ficon-feed-4:before {
+	content: "\e114";
+}
+.ficon-youtube:before {
+	content: "\e115";
+}
+.ficon-youtube-2:before {
+	content: "\e116";
+}
+.ficon-vimeo:before {
+	content: "\e117";
+}
+.ficon-vimeo2:before {
+	content: "\e118";
+}
+.ficon-vimeo-2:before {
+	content: "\e119";
+}
+.ficon-lanyrd:before {
+	content: "\e11a";
+}
+.ficon-flickr:before {
+	content: "\e11b";
+}
+.ficon-flickr-2:before {
+	content: "\e11c";
+}
+.ficon-flickr-3:before {
+	content: "\e11d";
+}
+.ficon-flickr-4:before {
+	content: "\e11e";
+}
+.ficon-picassa:before {
+	content: "\e11f";
+}
+.ficon-picassa-2:before {
+	content: "\e120";
+}
+.ficon-dribbble:before {
+	content: "\e121";
+}
+.ficon-dribbble-2:before {
+	content: "\e122";
+}
+.ficon-dribbble-3:before {
+	content: "\e123";
+}
+.ficon-forrst:before {
+	content: "\e124";
+}
+.ficon-forrst-2:before {
+	content: "\e125";
+}
+.ficon-deviantart:before {
+	content: "\e126";
+}
+.ficon-deviantart-2:before {
+	content: "\e127";
+}
+.ficon-steam:before {
+	content: "\e128";
+}
+.ficon-steam-2:before {
+	content: "\e129";
+}
+.ficon-github:before {
+	content: "\e12a";
+}
+.ficon-github-2:before {
+	content: "\e12b";
+}
+.ficon-github-3:before {
+	content: "\e12c";
+}
+.ficon-github-4:before {
+	content: "\e12d";
+}
+.ficon-github-5:before {
+	content: "\e12e";
+}
+.ficon-wordpress:before {
+	content: "\e12f";
+}
+.ficon-wordpress-2:before {
+	content: "\e130";
+}
+.ficon-joomla:before {
+	content: "\e131";
+}
+.ficon-blogger:before {
+	content: "\e132";
+}
+.ficon-blogger-2:before {
+	content: "\e133";
+}
+.ficon-tumblr:before {
+	content: "\e134";
+}
+.ficon-tumblr-2:before {
+	content: "\e135";
+}
+.ficon-yahoo:before {
+	content: "\e136";
+}
+.ficon-tux:before {
+	content: "\e137";
+}
+.ficon-apple:before {
+	content: "\e138";
+}
+.ficon-finder:before {
+	content: "\e139";
+}
+.ficon-android:before {
+	content: "\e13a";
+}
+.ficon-windows:before {
+	content: "\e13b";
+}
+.ficon-windows8:before {
+	content: "\e13c";
+}
+.ficon-soundcloud:before {
+	content: "\e13d";
+}
+.ficon-soundcloud-2:before {
+	content: "\e13e";
+}
+.ficon-skype:before {
+	content: "\e13f";
+}
+.ficon-reddit:before {
+	content: "\e140";
+}
+.ficon-linkedin:before {
+	content: "\e141";
+}
+.ficon-lastfm:before {
+	content: "\e142";
+}
+.ficon-lastfm-2:before {
+	content: "\e143";
+}
+.ficon-delicious:before {
+	content: "\e144";
+}
+.ficon-stumbleupon:before {
+	content: "\e145";
+}
+.ficon-stumbleupon-2:before {
+	content: "\e146";
+}
+.ficon-stackoverflow:before {
+	content: "\e147";
+}
+.ficon-pinterest:before {
+	content: "\e148";
+}
+.ficon-pinterest-2:before {
+	content: "\e149";
+}
+.ficon-xing:before {
+	content: "\e14a";
+}
+.ficon-xing-2:before {
+	content: "\e14b";
+}
+.ficon-flattr:before {
+	content: "\e14c";
+}
+.ficon-foursquare:before {
+	content: "\e14d";
+}
+.ficon-foursquare-2:before {
+	content: "\e14e";
+}
+.ficon-paypal:before {
+	content: "\e14f";
+}
+.ficon-paypal-2:before {
+	content: "\e150";
+}
+.ficon-paypal-3:before {
+	content: "\e151";
+}
+.ficon-yelp:before {
+	content: "\e152";
+}
+.ficon-libreoffice:before {
+	content: "\e153";
+}
+.ficon-file-pdf:before {
+	content: "\e154";
+}
+.ficon-file-openoffice:before {
+	content: "\e155";
+}
+.ficon-file-word:before {
+	content: "\e156";
+}
+.ficon-file-excel:before {
+	content: "\e157";
+}
+.ficon-file-zip:before {
+	content: "\e158";
+}
+.ficon-file-powerpoint:before {
+	content: "\e159";
+}
+.ficon-file-xml:before {
+	content: "\e15a";
+}
+.ficon-file-css:before {
+	content: "\e15b";
+}
+.ficon-html5:before {
+	content: "\e15c";
+}
+.ficon-html5-2:before {
+	content: "\e15d";
+}
+.ficon-css3:before {
+	content: "\e15e";
+}
+.ficon-chrome:before {
+	content: "\e15f";
+}
+.ficon-firefox:before {
+	content: "\e160";
+}
+.ficon-IE:before {
+	content: "\e161";
+}
+.ficon-opera:before {
+	content: "\e162";
+}
+.ficon-safari:before {
+	content: "\e163";
+}
+.ficon-sunrise:before {
+	content: "\e164";
+}
+.ficon-sun:before {
+	content: "\e165";
+}
+.ficon-moon:before {
+	content: "\e166";
+}
+.ficon-sun-2:before {
+	content: "\e167";
+}
+.ficon-windy:before {
+	content: "\e168";
+}
+.ficon-wind:before {
+	content: "\e169";
+}
+.ficon-snowflake:before {
+	content: "\e16a";
+}
+.ficon-cloudy:before {
+	content: "\e16b";
+}
+.ficon-cloud-2:before {
+	content: "\e16c";
+}
+.ficon-weather:before {
+	content: "\e16d";
+}
+.ficon-weather-2:before {
+	content: "\e16e";
+}
+.ficon-weather-3:before {
+	content: "\e16f";
+}
+.ficon-lines:before {
+	content: "\e170";
+}
+.ficon-cloud-3:before {
+	content: "\e171";
+}
+.ficon-lightning-2:before {
+	content: "\e172";
+}
+.ficon-lightning-3:before {
+	content: "\e173";
+}
+.ficon-rainy:before {
+	content: "\e174";
+}
+.ficon-rainy-2:before {
+	content: "\e175";
+}
+.ficon-windy-2:before {
+	content: "\e176";
+}
+.ficon-windy-3:before {
+	content: "\e177";
+}
+.ficon-snowy:before {
+	content: "\e178";
+}
+.ficon-snowy-2:before {
+	content: "\e179";
+}
+.ficon-snowy-3:before {
+	content: "\e17a";
+}
+.ficon-weather-4:before {
+	content: "\e17b";
+}
+.ficon-cloudy-2:before {
+	content: "\e17c";
+}
+.ficon-cloud-4:before {
+	content: "\e17d";
+}
+.ficon-lightning-4:before {
+	content: "\e17e";
+}
+.ficon-sun-3:before {
+	content: "\e17f";
+}
+.ficon-moon-2:before {
+	content: "\e180";
+}
+.ficon-cloudy-3:before {
+	content: "\e181";
+}
+.ficon-cloud-5:before {
+	content: "\e182";
+}
+.ficon-cloud-6:before {
+	content: "\e183";
+}
+.ficon-lightning-5:before {
+	content: "\e184";
+}
+.ficon-rainy-3:before {
+	content: "\e185";
+}
+.ficon-rainy-4:before {
+	content: "\e186";
+}
+.ficon-windy-4:before {
+	content: "\e187";
+}
+.ficon-windy-5:before {
+	content: "\e188";
+}
+.ficon-snowy-4:before {
+	content: "\e189";
+}
+.ficon-snowy-5:before {
+	content: "\e18a";
+}
+.ficon-weather-5:before {
+	content: "\e18b";
+}
+.ficon-cloudy-4:before {
+	content: "\e18c";
+}
+.ficon-lightning-6:before {
+	content: "\e18d";
+}
+.ficon-thermometer:before {
+	content: "\e18e";
+}
+.ficon-compass-2:before {
+	content: "\e18f";
+}
+.ficon-none:before {
+	content: "\e190";
+}
+.ficon-Celsius:before {
+	content: "\e191";
+}

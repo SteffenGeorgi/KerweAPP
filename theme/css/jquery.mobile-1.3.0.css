@@ -1943,8 +1943,8 @@ div.ui-mobile-viewport { overflow-x: hidden; }
 	z-index: 1000;
 }
 .ui-header-fixed {
-	top: 0px;
-	padding-top: 0px;
+	top: -1px;
+	padding-top: 1px;
 }
 .ui-header-fixed.ui-fixed-hidden {
 	top: 0;

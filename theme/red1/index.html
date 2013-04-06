@@ -25,6 +25,9 @@
 	<link rel="stylesheet" href="css/jquery.mobile-1.3.0.css" />
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	<!-- Countdown -->
+	<script src="js/jquery.lwtCountdown-1.0.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/countdown.css" />
 	<!-- Icons -->
 	<link rel="stylesheet" type="text/css" href="css/icons.css" />
 	<!-- Main Style -->
@@ -35,61 +38,25 @@
 <body>
 	<div id="page-home" data-role="page">
 											
-				<div id="header" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false">
+				<div id="header" data-role="header" data-id="bar" data-position="fixed" data-tap-toggle="false">
 				<!--<div id="ios-arrow-left" title="Albums"></div>-->
 					<div id="ios-button"><a href="#left-panel" data-shadow="false"><div class="icon-shadow panel-left" data-font-icon="&#xe05a;"></div></a></div>
 					<h1><img src="img/prototype2/header-logo.png" width="140" height="33"></h1>
 				</div>
 				
-				<div id="subnav" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="true">
-					<ul>
-						<li><a href="#"><div class="icon" data-font-icon="&#x25;"></div>NEUES</a></li>
-						<li class="active"><a href="#"><div class="icon" data-font-icon="&#x3c;"></div>EVENTS</a></li>
-						<li><a href="#"><div class="icon" data-font-icon="&#xe04e;"></div>KERWEGASSE</a></li>
-						<li><a href="#"><div class="icon" data-font-icon="&#x2f;"></div>MEDIEN</a></li>
-					</ul>
+				<div id="subnav"></div>
+				
+				<div id="content" data-role="content">
+	
 				</div>
 				
-				<div data-role="content" class="content" id="content-dashboard-weather">
-					<!-- Weather -->
-						<div class="weather first">
-							<div class="day">
-								<div class="label-day">Fr</div>
-								<div class="icon-wether" data-font-icon="&#xe16b;"></div>
-								<div class="label-temp">28 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
-							</div>
-						</div>
-						<div class="weather">
-							<div class="day">
-								<div class="label-day">Sa</div>
-								<div class="icon-wether" data-font-icon="&#xe16b;"></div>
-								<div class="label-temp">21 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
-							</div>
-						</div>
-						<div class="weather">
-							<div class="day">
-								<div class="label-day">So</div>
-								<div class="icon-wether" data-font-icon="&#xe16b;"></div>
-								<div class="label-temp">29 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
-							</div>
-						</div>
-						<div class="weather last">
-							<div class="day">
-								<div class="label-day">Mo</div>
-								<div class="icon-wether" data-font-icon="&#xe16b;"></div>
-								<div class="label-temp">31 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
-							</div>
-						</div>
-					<!-- Weather -->
-				</div>
-				
-				<div data-role="content" class="content" id="content-dashboard-countdown">
-					<h3>Countdown bis zur urigsten Kerwe an der Bergstra&szlig;e 2013</h3>
-					<div align="center" id="CDT"></div>
-				</div>
-				
-				<div data-role="footer" class="content" id="content-dashboard-countdown">
-					test
+				<div id="footer" data-role="footer" data-id="bar" data-position="fixed" data-tap-toggle="false">
+						<ul>
+							<li class="ui-btn-active ui-state-persist"><a href="#page-home"><div class="icon" data-font-icon="&#x25;"></div>Neuigkeiten</a></li>
+							<li><a href="#page-events" data-transition="slidefade"><div class="icon" data-font-icon="&#x3c;"></div>Events<div class="border"></div></a></li>
+							<li><a href="#page-kerwegass" data-transition="slidefade"><div class="icon" data-font-icon="&#xe04e;"></div>Kerwegass<div class="border"></div></a></li>
+							<li><a href="#page-songs" data-transition="slidefade"><div class="icon" data-font-icon="&#x31;"></div>Songs</a><div class="border"></div></li>
+						</ul>
 				</div>
 				
 				<div data-role="panel" id="left-panel" data-display="push" data-theme="c">
@@ -121,31 +88,16 @@
 				</div>
 				
 				<div id="content" data-role="content">
-					
-					<div class="wether">
-						<div class="day friday">
-							<div class="label-day">Fr</div>
-							<div class="icon-wether" data-font-icon="&#xe16b;"></div>
-							<div class="label-temp">28 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
-						</div>
-						<div class="day saturday">
-							<div class="label-day">Sa</div>
-							<div class="icon-wether" data-font-icon="&#xe16b;"></div>
-							<div class="label-temp">28 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
-						</div>
-						<div class="day sunday">
-							<div class="label-day">So</div>
-							<div class="icon-wether" data-font-icon="&#xe16b;"></div>
-							<div class="label-temp">28 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
-						</div>
-						<div class="day monday">
-							<div class="label-day">Mo</div>
-							<div class="icon-wether" data-font-icon="&#xe16b;"></div>
-							<div class="label-temp">28 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
-						</div>
-					</div>
-					
-					
+	
+				</div>
+				
+				<div id="footer" data-role="footer" data-id="bar" data-position="fixed" data-tap-toggle="false">
+						<ul>
+							<li><a href="#page-home"><div class="icon" data-font-icon="&#x25;"></div>Neuigkeiten</a></li>
+							<li class="ui-btn-active ui-state-persist"><a href="#page-events" data-transition="slidefade"><div class="icon" data-font-icon="&#x3c;"></div>Events<div class="border"></div></a></li>
+							<li><a href="#page-kerwegass" data-transition="slidefade"><div class="icon" data-font-icon="&#xe04e;"></div>Kerwegass<div class="border"></div></a></li>
+							<li><a href="#page-songs" data-transition="slidefade"><div class="icon" data-font-icon="&#x31;"></div>Songs</a><div class="border"></div></li>
+						</ul>
 				</div>
 				
 				<div data-role="panel" id="left-panel" data-display="push" data-theme="c">
@@ -167,9 +119,11 @@
 				
 	</div>
 	
+
+
+
 	<script type="text/javascript" src="phonegap.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
-	<script src="js/countdown.js"></script>
 	<script type="text/javascript">
 		app.initialize();
 	</script>
