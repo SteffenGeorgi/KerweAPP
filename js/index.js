@@ -57,4 +57,57 @@ $( document ).on( "pageinit", function() {
     });
 });
 
-// RETINA CANVAS
+// :: PAGE-EVENTS 
+// Filter
+$("#button-events-fr").click(function() {
+	if($(this).hasClass("active")) {
+		$("#content-events-list li").slideDown();
+		$(this).removeClass("active");
+	} else {
+		$("#button-events-sa").removeClass("active");
+		$("#button-events-so").removeClass("active");
+		$("#button-events-mo").removeClass("active");
+		$(this).addClass("active");
+		$("#content-events-list li").not(".events-fr").slideUp();
+		$("#content-events-list li.events-fr").slideDown();
+	}
+});
+$("#button-events-sa").click(function() {
+	if($(this).hasClass("active")) {
+		$("#content-events-list li").slideDown();
+		$(this).removeClass("active");
+	} else {
+		$("#button-events-fr").removeClass("active");
+		$("#button-events-so").removeClass("active");
+		$("#button-events-mo").removeClass("active");
+		$(this).addClass("active");
+		$("#content-events-list li").not(".events-sa").slideUp();
+		$("#content-events-list li.events-sa").slideDown();
+	}
+});
+$("#button-events-so").click(function() {
+	if($(this).hasClass("active")) {
+		$("#content-events-list li").slideDown();
+		$(this).removeClass("active");
+	} else {
+		$("#button-events-fr").removeClass("active");
+		$("#button-events-sa").removeClass("active");
+		$("#button-events-mo").removeClass("active");
+		$(this).addClass("active");
+		$("#content-events-list li").not(".events-so").slideUp();
+		$("#content-events-list li.events-so").slideDown();
+	}
+});
+$("#button-events-mo").click(function() {
+	if($(this).hasClass("active")) {
+		$("#content-events-list li").slideDown();
+		$(this).removeClass("active");
+	} else {
+		$("#button-events-fr").removeClass("active");
+		$("#button-events-sa").removeClass("active");
+		$("#button-events-so").removeClass("active");
+		$(this).addClass("active");
+		$("#content-events-list li").not(".events-mo").slideUp();
+		$("#content-events-list li.events-mo").slideDown();
+	}
+});

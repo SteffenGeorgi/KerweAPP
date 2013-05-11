@@ -20,20 +20,21 @@
 	-->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 	<!-- jQuery Mobile -->
 	<link rel="stylesheet" href="css/jquery.mobile-1.3.0.css" />
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
-	<!-- Icons -->
+	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="css/icons.css" />
-	<!-- Main Style -->
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<title>KerweAPP</title>
 	
 </head>
 <body>
 	<div id="page-home" data-role="page">
+				
+				<div class="blacksripe" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false"></div>
 											
 				<div id="header" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false">
 				<!--<div id="ios-arrow-left" title="Albums"></div>-->
@@ -41,12 +42,12 @@
 					<h1><img src="img/prototype2/header-logo.png" width="140" height="33"></h1>
 				</div>
 				
-				<div id="subnav" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="true">
+				<div id="subnav" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false">
 					<ul>
-						<li><a href="#"><div class="icon" data-font-icon="&#x25;"></div>NEUES</a></li>
-						<li class="active"><a href="#"><div class="icon" data-font-icon="&#x3c;"></div>EVENTS</a></li>
-						<li><a href="#"><div class="icon" data-font-icon="&#xe04e;"></div>KERWEGASSE</a></li>
-						<li><a href="#"><div class="icon" data-font-icon="&#x2f;"></div>MEDIEN</a></li>
+						<li class="active"><a href="#"><div class="icon" data-font-icon="&#x21;"></div>&Uuml;BERSICHT</a></li>
+						<li><a href="#page-events" data-transition="slidefade"><div class="icon" data-font-icon="&#x3c;"></div>EVENTS</a></li>
+						<li><a href="#page-kerwegasse"><div class="icon" data-font-icon="&#xe04e;"></div>KERWEGASSE</a></li>
+						<li><a href="#page-medien"><div class="icon" data-font-icon="&#x2f;"></div>MEDIEN</a></li>
 					</ul>
 				</div>
 				
@@ -88,10 +89,6 @@
 					<div align="center" id="CDT"></div>
 				</div>
 				
-				<div data-role="footer" class="content" id="content-dashboard-countdown">
-					test
-				</div>
-				
 				<div data-role="panel" id="left-panel" data-display="push" data-theme="c">
 					<div class="header"> <div class="title">Navigation</div> <a href="#" data-rel="close"><div data-font-icon="&#xe09c;"></div></a></div>
 					<ul data-role="listview" data-theme="a">
@@ -108,43 +105,164 @@
             <li data-icon="false"><a href="#">Collapsible content</a></li>
         </ul>
 				</div><!-- /panel -->
-				
 	</div>
 	
 	<!-- # PAGE-EVENTS # -->
 	<div id="page-events" data-role="page">
+				
+				<div class="blacksripe" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false"></div>
 											
-				<div id="header" data-role="header" data-id="bar" data-position="fixed" data-tap-toggle="false">
-				<!--<div id="ios-arrow-left" title="Albums"></div>-->
+				<div id="header" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false">
 					<div id="ios-button"><a href="#left-panel" data-shadow="false"><div class="icon-shadow panel-left" data-font-icon="&#xe05a;"></div></a></div>
-					<h1><img src="img/prototype2/header-logo.png" width="140" height="33"></h1>
+					<h1>Events</h1>
 				</div>
 				
-				<div id="content" data-role="content">
-					
-					<div class="wether">
-						<div class="day friday">
-							<div class="label-day">Fr</div>
-							<div class="icon-wether" data-font-icon="&#xe16b;"></div>
-							<div class="label-temp">28 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
-						</div>
-						<div class="day saturday">
-							<div class="label-day">Sa</div>
-							<div class="icon-wether" data-font-icon="&#xe16b;"></div>
-							<div class="label-temp">28 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
-						</div>
-						<div class="day sunday">
-							<div class="label-day">So</div>
-							<div class="icon-wether" data-font-icon="&#xe16b;"></div>
-							<div class="label-temp">28 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
-						</div>
-						<div class="day monday">
-							<div class="label-day">Mo</div>
-							<div class="icon-wether" data-font-icon="&#xe16b;"></div>
-							<div class="label-temp">28 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
-						</div>
+				<div id="subnav" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false">
+					<ul>
+						<li><a href="#page-home" data-transition="slidefade reverse"><div class="icon" data-font-icon="&#x21;"></div>&Uuml;BERSICHT</a></li>
+						<li class="active"><a href="#"><div class="icon" data-font-icon="&#x3c;"></div>EVENTS</a></li>
+						<li><a href="#page-kerwegasse" data-transition="slidefade"><div class="icon" data-font-icon="&#xe04e;"></div>KERWEGASSE</a></li>
+						<li><a href="#page-medien" data-transition="slidefade"><div class="icon" data-font-icon="&#x2f;"></div>MEDIEN</a></li>
+					</ul>
+				</div>
+				
+				<div data-role="content" class="content" id="content-events-buttons">
+					<div data-role="controlgroup" data-type="horizontal">
+						<a href="#" id="button-events-fr" data-role="button">Freitag</a>
+						<a href="#" id="button-events-sa" data-role="button">Samstag</a>
+						<a href="#" id="button-events-so" data-role="button">Sonntag</a>
+						<a href="#" id="button-events-mo" data-role="button">Montag</a>
 					</div>
-					
+				</div>
+				
+				<div data-role="content" class="content" id="content-events-list">
+					<ul data-role="listview">
+							<li class="events-fr" data-role="list-divider">Freitag, 02.08.13<span class="ui-li-count">4</span></li>
+							<li class="events-fr" data-icon="false">
+									<h4>Er&ouml;ffnung</h4> <div data-font-icon="&#x69;" class="time">18:00</div>
+									<p><a class="location" href="#">Kerwe &amp; Heimartverein Hemsbach</a></p>
+							</li>
+							<li class="events-fr" data-icon="false">
+									<h4>Er&ouml;ffnung</h4> <div data-font-icon="&#x69;" class="time">18:00</div>
+									<p><a class="location" href="#">Kerwe &amp; Heimartverein Hemsbach</a></p>
+							</li>
+							<li class="events-fr" data-icon="false">
+									<h4>Er&ouml;ffnung</h4> <div data-font-icon="&#x69;" class="time">18:00</div>
+									<p><a class="location" href="#">Kerwe &amp; Heimartverein Hemsbach</a></p>
+							</li>
+							<li class="events-fr" data-icon="false">
+									<h4>Er&ouml;ffnung</h4> <div data-font-icon="&#x69;" class="time">18:00</div>
+									<p><a class="location" href="#">Kerwe &amp; Heimartverein Hemsbach</a></p>
+							</li>
+							<li class="events-fr" data-icon="false">
+									<h4>Er&ouml;ffnung</h4> <div data-font-icon="&#x69;" class="time">18:00</div>
+									<p><a class="location" href="#">Kerwe &amp; Heimartverein Hemsbach</a></p>
+							</li>
+							<li class="events-sa" data-role="list-divider">Samstag, 03.08.13<span class="ui-li-count">9</span></li>
+							<li class="events-sa" data-icon="false">
+									<h4>Er&ouml;ffnung</h4> <div data-font-icon="&#x69;" class="time">18:00</div>
+									<p><a class="location" href="#">Kerwe &amp; Heimartverein Hemsbach</a></p>
+							</li>
+							<li class="events-so" data-role="list-divider">Sonntag, 04.08.13<span class="ui-li-count">7</span></li>
+							<li class="events-so" data-icon="false">
+									<h4>Er&ouml;ffnung</h4> <div data-font-icon="&#x69;" class="time">18:00</div>
+									<p><a class="location" href="#">Kerwe &amp; Heimartverein Hemsbach</a></p>
+							</li>
+							<li class="events-so" data-icon="false">
+									<h4>Er&ouml;ffnung</h4> <div data-font-icon="&#x69;" class="time">18:00</div>
+									<p><a class="location" href="#">Kerwe &amp; Heimartverein Hemsbach</a></p>
+							</li>
+							<li class="events-mo" data-role="list-divider">Montag, 05.08.13<span class="ui-li-count">3</span></li>
+							<li class="events-mo" data-icon="false">
+									<h4>Er&ouml;ffnung</h4> <div data-font-icon="&#x69;" class="time">18:00</div>
+									<p><a class="location" href="#">Kerwe &amp; Heimartverein Hemsbach</a></p>
+							</li>
+							<li class="events-mo" data-icon="false">
+									<h4>Er&ouml;ffnung</h4> <div data-font-icon="&#x69;" class="time">18:00</div>
+									<p><a class="location" href="#">Kerwe &amp; Heimartverein Hemsbach</a></p>
+							</li>
+					</ul>
+				</div>
+				
+				<div data-role="panel" id="left-panel" data-display="push" data-theme="c">
+					<div class="header"> <div class="title">Navigation</div> <a href="#" data-rel="close"><div data-font-icon="&#xe09c;"></div></a></div>
+					<ul data-role="listview" data-theme="a">
+            <li data-icon="false"><a href="http://www.google.de">Neuigkeiten</a></li>
+            <li data-icon="false"><a href="#">Events</a></li>
+            <li data-icon="false"><a href="#">Kerwegasse</a></li>
+            <li data-icon="false"><a href="#">Songs</a></li>
+            <li data-icon="false"><a href="#">Animation events</a></li>
+            <li data-icon="false"><a href="#">Automatic listview dividers</a></li>
+            <li data-icon="false"><a href="#">Buttons</a></li>
+            <li data-icon="false"><a href="#">Button icons</a></li>
+            <li data-icon="false"><a href="#">Caching pages</a></li>
+            <li data-icon="false"><a href="#">Checkbox</a></li>
+            <li data-icon="false"><a href="#">Collapsible content</a></li>
+        </ul>
+				</div><!-- /panel -->
+	</div>
+	
+	<!-- # PAGE-EVENTS # -->
+	<div id="page-kerwegasse" data-role="page">
+				
+				<div class="blacksripe" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false"></div>
+											
+				<div id="header" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false">
+					<div id="ios-button"><a href="#left-panel" data-shadow="false"><div class="icon-shadow panel-left" data-font-icon="&#xe05a;"></div></a></div>
+					<h1>Events</h1>
+				</div>
+				
+				<div id="subnav" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false">
+					<ul>
+						<li><a href="#page-home" data-transition="slidefade reverse"><div class="icon" data-font-icon="&#x21;"></div>&Uuml;BERSICHT</a></li>
+						<li><a href="#page-events" data-transition="slidefade reverse"><div class="icon" data-font-icon="&#x3c;"></div>EVENTS</a></li>
+						<li class="active"><a href="#"><div class="icon" data-font-icon="&#xe04e;"></div>KERWEGASSE</a></li>
+						<li><a href="#page-medien" data-transition="slidefade"><div class="icon" data-font-icon="&#x2f;"></div>MEDIEN</a></li>
+					</ul>
+				</div>
+				
+				<div data-role="content" class="content">
+
+				</div>
+				
+				<div data-role="panel" id="left-panel" data-display="push" data-theme="c">
+					<div class="header"> <div class="title">Navigation</div> <a href="#" data-rel="close"><div data-font-icon="&#xe09c;"></div></a></div>
+					<ul data-role="listview" data-theme="a">
+            <li data-icon="false"><a href="http://www.google.de">Neuigkeiten</a></li>
+            <li data-icon="false"><a href="#">Events</a></li>
+            <li data-icon="false"><a href="#">Kerwegass</a></li>
+            <li data-icon="false"><a href="#">Songs</a></li>
+            <li data-icon="false"><a href="#">Animation events</a></li>
+            <li data-icon="false"><a href="#">Automatic listview dividers</a></li>
+            <li data-icon="false"><a href="#">Buttons</a></li>
+            <li data-icon="false"><a href="#">Button icons</a></li>
+            <li data-icon="false"><a href="#">Caching pages</a></li>
+            <li data-icon="false"><a href="#">Checkbox</a></li>
+            <li data-icon="false"><a href="#">Collapsible content</a></li>
+        </ul>
+				</div><!-- /panel -->
+	</div>
+	
+		<!-- # PAGE-MEDIEN # -->
+	<div id="page-medien" data-role="page">
+				
+				<div class="blacksripe" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false"></div>
+											
+				<div id="header" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false">
+					<div id="ios-button"><a href="#left-panel" data-shadow="false"><div class="icon-shadow panel-left" data-font-icon="&#xe05a;"></div></a></div>
+					<h1>Events</h1>
+				</div>
+				
+				<div id="subnav" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false">
+					<ul>
+						<li><a href="#page-home" data-transition="slidefade reverse"><div class="icon" data-font-icon="&#x21;"></div>&Uuml;BERSICHT</a></li>
+						<li><a href="#page-events" data-transition="slidefade reverse"><div class="icon" data-font-icon="&#x3c;"></div>EVENTS</a></li>
+						<li><a href="#page-kerwegasse" data-transition="slidefade reverse"><div class="icon" data-font-icon="&#xe04e;"></div>KERWEGASSE</a></li>
+						<li class="active"><a href="#" data-transition="slidefade"><div class="icon" data-font-icon="&#x2f;"></div>MEDIEN</a></li>
+					</ul>
+				</div>
+						
+				<div data-role="content" class="content">
 					
 				</div>
 				
@@ -164,7 +282,6 @@
             <li data-icon="false"><a href="#">Collapsible content</a></li>
         </ul>
 				</div><!-- /panel -->
-				
 	</div>
 	
 	<script type="text/javascript" src="phonegap.js"></script>
