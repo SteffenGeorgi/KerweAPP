@@ -27,35 +27,74 @@ var app = {
         // This is an event handler function, which means the scope is the event.
         // So, we must explicitly called `app.report()` instead of `this.report()`.
         app.report('deviceready');
-    },
-    report: function(id) {
-        // Report the event in the console
-        console.log("Report: " + id);
-
-        // Toggle the state from "pending" to "complete" for the reported ID.
-        // Accomplished by adding .hide to the pending element and removing
-        // .hide from the complete element.
-        document.querySelector('#' + id + ' .pending').className += ' hide';
-        var completeElem = document.querySelector('#' + id + ' .complete');
-        completeElem.className = completeElem.className.split('hide').join('');
     }
 };
 
-// Panel left
-$( document ).on( "pageinit", function() {
-    $( document ).on( "swipeleft swiperight", function( e ) {
-        // We check if there is no open panel on the page because otherwise
-        // a swipe to close the left panel would also open the right panel (and v.v.).
-        // We do this by checking the data that the framework stores on the page element (panel: open).
-        if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
-            if ( e.type === "swipeleft"  ) {
-                $( "#right-panel" ).panel( "open" );
-            } else if ( e.type === "swiperight" ) {
-                $( "#left-panel" ).panel( "open" );
-            }
-        }
-    });
-});
+	function getContent_HomeWeather() {
+		$.getJSON('http://hemsbach.ohost.de/server/requests.php', function(data) {
+			$.each(data, function(i, item) {
+				$("#weather-" + data[i].day + " .label-temp").html( data[i].temp + ' <span class="icon-temp" data-font-icon="&#xe191;"></span>');
+			});
+		});
+		console.log("Get Weather");
+	}
+
+	// P2R: HOME
+	$(document).delegate("#page-home", "pageinit", function(event){
+		/*
+		$(".iscroll-wrapper", this).bind({
+			iscroll_onpulldown: function(event, data){
+				getContent_HomeWeather(); 
+				data.iscrollview.refresh();
+			}
+		});
+		*/
+		getContent_HomeWeather();
+	});
+	
+	$(document).on('pageinit', '#page-kerwegasse', function(){  
+		$('.flexslider').flexslider({
+			animation: "slide",
+			slideshow: false,
+			animationLoop: false, 
+			animationSpeed: 150,            //Integer: Set the speed of animations, in milliseconds
+			useCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available
+			touch: true,                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
+			keyboard: true,
+			controlsContainer: "#kerwegasse-nav",
+			controlNav: true, 
+		});
+	});
+	
+	$(document).on('pageinit', '#page-medien', function(){  
+		$( function() {
+        	$( 'audio' ).audioPlayer();
+    	});
+	});
+
+	$(document).bind( "mobileinit", function() {
+		$.support.cors = true;
+		$.mobile.allowCrossDomainPages = true; 
+	});
+
+	// Panel left
+	
+	$(document).on("pageinit", function() {
+		$( document ).on( "swipeleft swiperight", function( e ) {
+			// We check if there is no open panel on the page because otherwise
+			// a swipe to close the left panel would also open the right panel (and v.v.).
+			// We do this by checking the data that the framework stores on the page element (panel: open).
+			if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+				if ( e.type === "swipeleft"  ) {
+					$( "#right-panel" ).panel( "open" );
+				} else if ( e.type === "swiperight" ) {
+					$( "#left-panel" ).panel( "open" );
+				}
+			}
+		});
+	});
+	
+
 
 // :: PAGE-EVENTS 
 // Filter

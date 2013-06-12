@@ -21,15 +21,22 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
 	<!-- jQuery Mobile -->
 	<link rel="stylesheet" href="css/jquery.mobile-1.3.0.css" />
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	
+	<title>KerweAPP</title>
+	<script src="js/jquery.1-9-1.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	<!--<script type="text/javascript" src="js/iscroll.js"></script>-->
+	<!--<script type="text/javascript" src="js/jquery.mobile.iscroll.js"></script>-->
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/jquery.player.js"></script>
 	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css" />
 	<link rel="stylesheet" type="text/css" href="css/icons.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<title>KerweAPP</title>
-	
+
 </head>
 <body>
 	<div id="page-home" data-role="page">
@@ -50,31 +57,31 @@
                 <li><a href="#page-medien"><div class="icon" data-font-icon="&#x2f;"></div>MEDIEN</a></li>
             </ul>
         </div>
-        
+		
         <div data-role="content" class="content" id="content-dashboard-weather">
             <!-- Weather -->
-                <div class="weather first">
+                <div id="weather-fr" class="weather first">
                     <div class="day">
                         <div class="label-day">Fr</div>
                         <div class="icon-wether" data-font-icon="&#xe16b;"></div>
                         <div class="label-temp">28 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
                     </div>
                 </div>
-                <div class="weather">
+                <div id="weather-sa" class="weather">
                     <div class="day">
                         <div class="label-day">Sa</div>
                         <div class="icon-wether" data-font-icon="&#xe16b;"></div>
                         <div class="label-temp">21 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
                     </div>
                 </div>
-                <div class="weather">
+                <div id="weather-so" class="weather">
                     <div class="day">
                         <div class="label-day">So</div>
                         <div class="icon-wether" data-font-icon="&#xe16b;"></div>
                         <div class="label-temp">29 <span class="icon-temp" data-font-icon="&#xe191;"></span></div>
                     </div>
                 </div>
-                <div class="weather last">
+                <div id="weather-mo" class="weather last">
                     <div class="day">
                         <div class="label-day">Mo</div>
                         <div class="icon-wether" data-font-icon="&#xe16b;"></div>
@@ -83,11 +90,12 @@
                 </div>
             <!-- Weather -->
         </div>
-        
+		
         <div data-role="content" class="content" id="content-dashboard-countdown">
             <h3>Countdown bis zur urigsten Kerwe an der Bergstra&szlig;e 2013</h3>
             <div align="center" id="CDT"></div>
         </div>
+		
         
         <div data-role="panel" id="left-panel" data-display="push" data-theme="c">
             <div class="header"><div class="title">Navigation</div> <a href="#" data-rel="close"><div data-font-icon="&#xe09c;"></div></a></div>
@@ -184,7 +192,8 @@
             </li>
           </ul>
       </div>
-      
+	  
+	  
       <div data-role="panel" id="left-panel" data-display="push" data-theme="c">
           <div class="header"> <div class="title">Navigation</div> <a href="#" data-rel="close"><div data-font-icon="&#xe09c;"></div></a></div>
 			<ul data-role="listview" data-theme="a">
@@ -223,8 +232,39 @@
 			</ul>
 		</div>
 		
-		<div data-role="content" class="content">
+		<div data-role="content" id="kerwegasse-bar"></div>
+		<div data-role="content" id="kerwegasse-nav"></div>
+		
+		<div id="content-kerwegasse-slider" data-role="content">
 
+		<div class="flex-container">
+		  <div class="flexslider">
+			<ul class="slides">
+			  <li>
+			  <div class="element">
+				<div class="slide-headline">Max | Bistro</div>
+			  	<div class="slide-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+				<div class="slide-details">Mehr &gt;&gt;</div>
+			  </div>
+			  </li>
+			  <li>
+			  <div class="element">
+				<div class="slide-headline">Abibar</div>
+			  	<div class="slide-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+				<div class="slide-details">Mehr &gt;&gt;</div>
+			  </div>
+			  </li>
+			  <li>
+			  <div class="element">
+				<div class="slide-headline">Pfadfinder</div>
+			  	<div class="slide-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+				<div class="slide-details">Mehr &gt;&gt;</div>
+			  </div>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+		
 		</div>
 		
 		<div data-role="panel" id="left-panel" data-display="push" data-theme="c">
@@ -245,14 +285,14 @@
 		</div><!-- /panel -->
 	</div>
 	
-		<!-- # PAGE-MEDIEN # -->
+	<!-- # PAGE-MEDIEN # -->
 	<div id="page-medien" data-role="page">
 				
 		<div class="blacksripe" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false"></div>
 											
 			<div id="header" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false">
 				<div id="ios-button"><a href="#left-panel" data-shadow="false"><div class="icon-shadow panel-left" data-font-icon="&#xe05a;"></div></a></div>
-				<h1>Events</h1>
+				<h1>Medien</h1>
 			</div>
 				
 			<div id="subnav" data-role="header" data-id="bar" data-fullscreen="false" data-position="fixed" data-tap-toggle="false">
@@ -265,6 +305,21 @@
 			</div>
 					
 			<div data-role="content" class="content">
+			
+			<div class="audioplayer audioplayer-stopped">
+				<audio src="http://kerwe.de/downloads/kerwesongs/2012/willie_jean_spears-endlich_ist_die_kerwe_da.mp3" preload="auto" controls></audio>
+				<div class="audioplayer-playpause" title="Play"><a href="#">Play</a></div>
+				<div class="audioplayer-time audioplayer-time-current">00:00</div>
+				<div class="audioplayer-bar">
+					<div class="audioplayer-bar-loaded"></div>
+					<div class="audioplayer-bar-played"></div>
+				</div>
+				<div class="audioplayer-time audioplayer-time-duration">&hellip;</div>
+				<div class="audioplayer-volume">
+					<div class="audioplayer-volume-button" title="Volume"><a href="#">Volume</a></div>
+					<div class="audioplayer-volume-adjust"><div><div></div></div></div>
+				</div>
+			</div>
 				
 			</div>
 			
@@ -287,7 +342,7 @@
 			
 	</div>
 	
-	<script type="text/javascript" src="phonegap.js"></script>
+	<!--<script type="text/javascript" src="phonegap.js"></script> -->
 	<script type="text/javascript" src="js/index.js"></script>
 	<script src="js/countdown.js"></script>
 	<script type="text/javascript">
